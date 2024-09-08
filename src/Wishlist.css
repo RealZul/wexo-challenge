@@ -1,0 +1,52 @@
+/* Center the wishlist on the page */
+.wishlist-page {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding: 20px;
+}
+
+/* Movie list container */
+.movie-list {
+	display: grid;
+	grid-template-columns: repeat(5, 1fr); /* 5 movies per row */
+	grid-gap: 20px; /* Space between movie cards */
+	width: 100%;
+	max-width: 1200px; /* Optional: Set a maximum width for the entire list */
+	justify-content: center; /* Center the grid horizontally */
+	padding: 20px;
+	box-sizing: border-box;
+}
+
+/* Individual movie card styling */
+.movie-card {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 10px;
+	height: 100%; /* Ensure consistent card height */
+	width: 200px; /* Match this width with your image or other constraints */
+}
+
+.movie-card img {
+	width: 150px; /* Set fixed width for movie posters */
+	height: auto;
+	border-radius: 5px;
+}
+
+/* Button styling */
+button {
+	background-color: #007bff;
+	color: white;
+	padding: 8px 16px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	margin-top: -20px;
+	transition: background-color 0.3s ease;
+}
+
+button:hover {
+	background-color: #0056b3;
+}

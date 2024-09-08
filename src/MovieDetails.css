@@ -1,0 +1,61 @@
+.movie-details-container {
+	width: 100%;
+	min-height: 100vh; /* Ensure there's enough height for the backdrop and content */
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	padding: 20px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+/* Position the movie header with poster and info relative to the backdrop */
+.movie-header {
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+	background: rgba(
+		0,
+		0,
+		0,
+		0.6
+	); /* Semi-transparent background to make text readable */
+	padding: 20px;
+	border-radius: 10px;
+	z-index: 1; /* Make sure this is layered on top of the backdrop */
+	position: relative;
+	max-width: 800px; /* Adjust to fit the content */
+	margin: 0 auto;
+}
+
+.movie-poster {
+	width: 300px;
+	border-radius: 5px;
+	margin-right: 20px;
+}
+
+.movie-info {
+	color: white; /* Ensure text stands out on top of the backdrop */
+	font-size: 1rem;
+}
+
+.movie-info h1 {
+	font-size: 2rem;
+	margin-bottom: 10px;
+}
+
+.movie-info p,
+.movie-info div {
+	font-size: 1rem;
+	margin: 5px 0;
+}
+
+.movie-info strong {
+	font-weight: bold;
+	font-size: 1rem;
+}
+
+.movie-details-container button {
+	margin-top: 20px;
+}

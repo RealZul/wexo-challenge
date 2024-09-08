@@ -1,0 +1,81 @@
+.frontpage {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
+	padding: 20px;
+	box-sizing: border-box;
+}
+
+/* Style each genre section */
+.genre-section {
+	margin-bottom: 30px;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center; /* This centers the genre heading and movies */
+}
+
+/* Center the "Explore Movies by Genre" heading */
+h1 {
+	text-align: center;
+	width: 100%;
+}
+
+/* Ensure the heading is centered above the movies */
+h2 {
+	text-align: center;
+	width: auto;
+	margin-bottom: 10px;
+}
+
+/* Adjust the layout for the movie row */
+.movie-row {
+	display: flex;
+	gap: 20px;
+	overflow-x: auto;
+}
+
+/* Center the movies within each genre section */
+.movies-container {
+	display: flex;
+	justify-content: center; /* Center the movie cards */
+	gap: 15px;
+	flex-wrap: wrap;
+	width: 100%;
+}
+
+/* Style for the movie card */
+.movie-card img {
+	width: 150px;
+	height: auto;
+	border-radius: 5px;
+}
+
+.view-details-btn {
+	display: inline-block;
+	background-color: #007bff;
+	color: white;
+	padding: 8px 16px;
+	text-decoration: none;
+	border-radius: 4px;
+	margin-bottom: 30px;
+	margin-top: auto;
+	transition: background-color 0.3s ease;
+}
+
+.view-details-btn:hover {
+	background-color: #0056b3;
+}
+
+.movie-card h1 {
+	margin-bottom: auto;
+	margin-top: auto;
+	font-size: 18px; /* Adjust the size as needed */
+	text-align: center;
+	line-height: 1.2; /* Controls the spacing between lines */
+	margin: 10px 0; /* Adjust spacing */
+	word-wrap: break-word; /* This forces longer titles to wrap onto multiple lines */
+	max-width: 100%; /* Ensure titles don't overflow */
+	white-space: normal; /* Ensures that the text will wrap properly */
+}

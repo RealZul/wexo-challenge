@@ -1,0 +1,49 @@
+.genre-page {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 20px;
+}
+
+.movie-list {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 15px;
+}
+
+h1 {
+	text-transform: capitalize;
+}
+
+.movie-poster {
+	width: 200px; /* You can adjust this size as needed */
+	height: auto; /* Ensures the image maintains its aspect ratio */
+	border-radius: 5px;
+	object-fit: cover; /* Ensures the image fits within the frame */
+	margin-bottom: 10px;
+}
+
+.movie-card {
+	display: inline-block;
+	text-align: center;
+	margin: 10px;
+	width: 200px; /* Match this width with the image width */
+}
+
+.button-container {
+	display: flex;
+	justify-content: center;
+	width: 100%;
+}
+
+button {
+	background-color: #007bff;
+	color: white;
+	padding: 10px 20px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	font-size: 16px;
+	transition: background-color 0.3s ease;
+	margin: 0 auto; /* Add this to ensure margin auto works with flexbox */
+	display: inline-block;
+}
