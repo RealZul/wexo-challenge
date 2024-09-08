@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import axios from 'axios';
-import MovieCard from './components/MovieCard'; // Assuming this component exists for displaying each movie
+import MovieCard from './components/MovieCard';
 import './FrontPage.css';
 
 const FrontPage = () => {
@@ -34,10 +34,10 @@ const FrontPage = () => {
 					const response = await axios.get(
 						`https://feed.entertainment.tv.theplatform.eu/f/jGxigC/bb-all-pas?form=json&lang=da&byTags=genre:${genre}&byProgramType=movie&range=1-5`
 					);
-					moviesData[genre] = response.data.entries || []; // Store each genre's movies in the object
+					moviesData[genre] = response.data.entries || [];
 				}
 
-				setMoviesByGenre(moviesData); // Set state with all movies
+				setMoviesByGenre(moviesData);
 				setLoading(false);
 			} catch (err) {
 				setError(err);
